@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <style type="text/css">
+        a { 
+            text-decoration: none;
+        }
+        </style>
+        <title>TP partage de liens</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 mt-5">
+                    <button type="button" class="btn btn-primary">Revenir à la liste des liens</button>
+                </div>
+            </div>
+            <form>
+                <div class="row justify-content-center mt-5">
+                    <div class="col-md-8">
+                        <h1>Ajouter un lien</h1>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="mb-3">
+                            <label for="titre" class="form-label">Titre du lien</label>
+                            <input type="text" class="form-control" id="titre" placeholder="Gagner à coup sûr au loto">
+                        </div>
+                        <div class="mb-3">
+                            <label for="lien" class="form-label">Lien</label>
+                            <input type="text" class="form-control" id="lien" placeholder="https://google.com?q=bon%20courage">
+                        </div>
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Description du lien</label>
+                            <textarea class="form-control" id="description" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-8 text-end">
+                        <button type="button" class="btn btn-success">Enregistrer</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script>
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+        </script>
+    </body>
+</html>
