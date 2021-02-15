@@ -1,6 +1,6 @@
 <div class="row justify-content-center">
     <div class="col-md-8 mt-5">
-        <button type="button" class="btn btn-primary">Revenir à la liste des liens</button>
+        <a href="button" class="btn btn-primary">Revenir à la liste des liens</a>
     </div>
 </div>
 <form action="" method="POST">
@@ -30,7 +30,7 @@
     </div>
     <div class="row justify-content-center">
         <div class="col-md-8 text-end">
-            <button type="button" class="btn btn-success">Enregistrer</button>
+            <button type="submit" class="btn btn-success">Enregistrer</button>
         </div>
     </div>
 </form>

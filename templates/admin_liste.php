@@ -21,7 +21,7 @@
                         <td><?php echo $lien['lien']; ?></td>
                         <td><?php echo $lien['description']; ?></td>
                         <td>
-                            <a href="/admin/modifier-lien" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Modifier">
+                            <a href="/admin/modifier-lien?lien=<?php echo $indice; ?>" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Modifier">
                                 <i class="bi-pencil"></i>
                             </a>
                             <a href="/admin/supprimer-lien?lien=<?php echo $indice; ?>" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Supprimer">
