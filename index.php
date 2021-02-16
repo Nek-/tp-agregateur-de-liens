@@ -7,7 +7,7 @@ require_once "fonctions/template.php";
 require_once "fonctions/securite.php";
 require_once "fonctions/model.php";
 
-switch ($_SERVER['PATH_INFO']) {
+switch ($_SERVER['PATH_INFO'] ?? '') {
     case '':
         require_once 'controllers/page_accueil.php';
         break;
